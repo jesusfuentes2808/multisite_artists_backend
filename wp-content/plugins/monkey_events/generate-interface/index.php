@@ -97,6 +97,8 @@ function our_custom_form_function(){
         
         $selectNothing = true;
         $arrayMessage = array();
+        
+        //var_dump($_POST['global']);
 
         if(isset($_POST['global'])){
             foreach($_POST['global'] as $postType){
@@ -128,6 +130,9 @@ function our_custom_form_function(){
                 $codeArtist = get_field('codigo', $postId);
                 $url = get_field('url', $postId);
                 
+                array_push($arrayMessage, fn_sincronizar_artista_info($postId, $codeArtist));
+                array_push($arrayMessage, fn_enviar_files_remote($url, $codeArtist, 'artist'));
+                
                 foreach(fn_sincronizar_listas($postId, $codeArtist) as $response){
                     array_push($arrayMessage, $response);
                 }
@@ -141,13 +146,19 @@ function our_custom_form_function(){
 
         $_SESSION['message'] = $arrayMessage;
 
+        //var_dump("HOLA");
+        //exit();
+
         if($selectNothing){
             wp_redirect(admin_url('/admin.php?page=sincronizar_listas&response=select_nothing'));    
         } else {
             wp_redirect(admin_url('/admin.php?page=sincronizar_listas&response=ok'));    
         }
 
+
     } catch (\Error $e) {
+        var_dump($e->getMessage());
+        
         wp_redirect(admin_url('/admin.php?page=sincronizar_listas&response=error'));    
     }   
 }

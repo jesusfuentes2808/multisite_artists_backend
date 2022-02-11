@@ -18,6 +18,7 @@ include('generate-interface/index.php');
 include('spotify-api/index.php');
 include('youtube-api/index.php');
 include('generate-json-local/index.php');
+include('generate-json-local/artist.php');
 include('generate-json-remote/index.php');
 
 const ARRPOSTTYPE = ['playlist_yt', 'playlist_sp'];

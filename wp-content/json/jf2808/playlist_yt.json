@@ -1,1 +1,1 @@
-[{"title":"TEST","codigo_de_playlist":"aaa","response":{"kind":"youtube#playlistListResponse","etag":"wmBHHaVR6z7nhuhaIxRxd6bsC2o","pageInfo":{"totalResults":0,"resultsPerPage":10},"items":[]}}]
+{"items":[{"title":"TEST","codigo_de_playlist":"aaa","response":{"kind":"youtube#playlistListResponse","etag":"wmBHHaVR6z7nhuhaIxRxd6bsC2o","pageInfo":{"totalResults":0,"resultsPerPage":10},"items":[]}}]}
