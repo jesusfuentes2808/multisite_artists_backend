@@ -12,8 +12,8 @@
  */
 defined( 'ABSPATH' ) or die( 'No inicalizado' );
 define('PLUGIN_FILE_URL', __FILE__);
-//define('DATA_ARTISTS', get_artists_all_columns());
-//var_dump(DATA_ARTISTS);
+
+include('filter-table.php');
 
 function register_post_contact_user_type() {
 
@@ -317,169 +317,16 @@ add_action( 'init', 'register_post_page_artist_items_type' );
 add_action( 'init', 'register_post_contact_user_type' );
 
 
-//Registrar columna
-//add_filter('manage_posts_columns', 'my_columns');
-
-
-add_filter('manage_edit-playlist_yt_columns', 'my_columns');
-function my_columns($columns) {
-    var_dump("HOLA");
-    $columns['pagina_artista_id'] = 'Artista';
-    return $columns;
-}
-
-
-function test() {
-    global $dataArtistStart;
-    //$dataArtistStart = get_artists_all_columns();
-
-}
-add_action( 'after_setup_theme', 'test' );
-
-//$dataArtistStart = get_artists_all_columns();
-//get_post_meta($item->ID, 'url');
-add_action('manage_posts_custom_column',  'my_show_columns');
-function my_show_columns($name) {
-    global $post;
-
-    $posts_query = get_artists_all_columns();
-
-    $listArtists = array_map(function ($item) {
-        $arr['id'] = $item->ID;
-        $arr['name'] = $item->ID . ' | ' . $item->post_title;
-        return $arr;
-    }, $posts_query);
-
-
-    switch ($name) {
-        case 'pagina_artista_id':
-            $artistId = get_post_meta($post->ID, 'pagina_artista_id')[0];
-            //var_dump($artistId );
-
-            $artistSearch = array_search($artistId, array_column($listArtists, 'id'));
-            $views = $listArtists[$artistSearch]['name'];
-
-            echo $views;
-    }
-}
-
-
-function get_artists_all_columns(){
-    $args = array (
-        'post_type'      => 'page_artist',
-        'posts_per_page' => -1,
-        'orderby'   => array(
-            'date' =>'DESC',
-        )
-    );
-
-    $query = new WP_Query( $args );
-
-
-    $posts_query = $query->posts;
-
-    return $posts_query ;
-}
-
-
-add_filter("manage_edit-playlist_yt_sortable_columns", 'concerts_sort');
-function concerts_sort($columns) {
-    $custom = array(
-        'pagina_artista_id' 	=> 'pagina_artista_id',
-    );
-    return wp_parse_args($custom, $columns);
-}
-
-
-add_filter( 'request', 'city_column_orderby' );
-function city_column_orderby( $vars ) {
-    if ( isset( $vars['orderby'] ) && 'pagina_artista_id' == $vars['orderby'] ) {
-        $vars = array_merge( $vars, array(
-            'meta_key' => 'pagina_artista_id',
-            //'orderby' => 'meta_value_num', // does not work
-            'orderby' => 'meta_value'
-            //'order' => 'asc' // don't use this; blocks toggle UI
-        ) );
-    }
-    return $vars;
-}
-
-
-//add_filter( 'parse_query', 'prefix_parse_filter' );
-add_filter( 'parse_query', 'prefix_parse_filter' );
-function  prefix_parse_filter($query) {
-
-    global $pagenow;
-    $current_page = isset( $_GET['post_type'] ) ? $_GET['post_type'] : '';
-    $typeQuery = $query->query['post_type'];
-
-    //var_dump("IS_MAIN_QUERY");
-    //var_dump($query->is_main_query());
-
-
-    //MAIN
-    /*$query->set('meta_query', array(
-        array(
-            'key' => 'pagina_artista_id',
-            'compare' => '=',
-            'value' => 18
-        )
-    ));*/
-
-    //var_dump($query);
-    /*var_dump( is_admin() &&
-        'playlist_yt' == $current_page &&
-        'edit.php' == $pagenow &&
-        $typeQuery == 'playlist_yt' &&
-        isset( $_GET['s'] )
-    );*/
-
-    //var_dump("CALZONCILLOS");
-    //var_dump(isset($_GET['ADMIN_FILTER_FIELD_VALUE']));
-    //var_dump($query->is_main_query() && $typeQuery == 'playlist_yt' && isset($_GET['ADMIN_FILTER_FIELD_VALUE']));
-    if($query->is_main_query() && $typeQuery == 'playlist_yt' && (isset($_GET['ADMIN_FILTER_FIELD_VALUE']) && is_numeric($_GET['ADMIN_FILTER_FIELD_VALUE'])) ){
-        $query->set('meta_query', array(
-            array(
-                'key' => 'pagina_artista_id',
-                'compare' => '=',
-                'value' => $_GET['ADMIN_FILTER_FIELD_VALUE']
-            )
-        ));
-    }
-    /*
-    if ( is_admin() &&
-        'playlist_yt' == $current_page &&
-        'edit.php' == $pagenow &&
-        $typeQuery == 'playlist_yt' &&
-        isset( $_GET['s'] )
-        //$_GET['pagina_artista_id'] != '' ) {
-    ) {
-        var_dump($query);
-        $query->set('meta_query', array(
-            array(
-                'key' => 'pagina_artista_id',
-                'compare' => '=',
-                'value' => 18
-            )
-        ));
-    }*/
 
 
 
-    /*var_dump($query);
-    if ( is_admin() &&
-        'playlist_yt' == $current_page &&
-        'edit.php' == $pagenow
-        //isset( $_GET['pagina_artista_id'] ) &&
-        //$_GET['pagina_artista_id'] != '' ) {
-        ) {
 
-        $competition_name                  = $_GET['pagina_artista_id']? $_GET['pagina_artista_id'] : '';
-        $query->query_vars['meta_key']     = 'pagina_artista_id';
-        $query->query_vars['meta_value']   = $competition_name;
-        $query->query_vars['meta_compare'] = '=';
-    }*/
-}
+
+
+
+
+
+
 
 /*
 function register_genre_taxonomy() {
@@ -565,50 +412,5 @@ function hide_batch_update_buttons() {
 
 
 
-add_action( 'restrict_manage_posts', 'wpse45436_admin_posts_filter_restrict_manage_posts' );
-/**
- * First create the dropdown
- * make sure to change POST_TYPE to the name of your custom post type
- *
- * @author Ohad Raz
- *
- * @return void
- */
-function wpse45436_admin_posts_filter_restrict_manage_posts(){
-    $type = 'post';
-    if (isset($_GET['post_type'])) {
-        $type = $_GET['post_type'];
-    }
 
-    //only add filter to post type you want
-    if ('playlist_yt' == $type){
-        //change this to the list of values you want to show
-        //in 'label' => 'value' format
-        $values = get_artists_all_columns();
 
-        $listArtists = array_map(function ($item) {
-            $arr['id'] = $item->ID;
-            $arr['name'] = $item->ID . ' | ' . $item->post_title;
-            return $arr;
-        }, $values );
-        ?>
-        <select name="ADMIN_FILTER_FIELD_VALUE">
-            <option value=""><?php _e('Filter By ', 'wose45436'); ?></option>
-            <?php
-            $current_v = isset($_GET['ADMIN_FILTER_FIELD_VALUE'])? $_GET['ADMIN_FILTER_FIELD_VALUE']:'';
-            foreach ($listArtists as $label => $value) {
-                echo "<option value='" . $value['id'] . "'>". $value['name'] . " </option>";
-                /*var_dump($values);
-                printf
-                (
-                    '<option value="'.$value->ID.'"%s>'.$value->ID.'</option>',
-                    $value,
-                    $value == $current_v? ' selected="selected"':'',
-                    $label
-                );*/
-            }
-            ?>
-        </select>
-        <?php
-    }
-}

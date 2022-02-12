@@ -2,132 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b45dca6c-e99b-4d93-92bc-000e19f2b68a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/monkey_multisite/filter-table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/json/in_trend/in_trend.json" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/json/in_trend/in_trend.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/json/jf2808/playlist_sp.json" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/json/jf2808/playlist_sp.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/json/jf2808/playlist_yt.json" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/json/jf2808/playlist_yt.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/json/page_artist_item/page_artist_item.json" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/json/page_artist_item/page_artist_item.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/json/ranking/ranking.json" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/json/ranking/ranking.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/json/ricardo_123/playlist_sp.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/json/ricardo_123/playlist_yt.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/json/ricardomontaner_123/artist.json" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/json/ricardomontaner_123/artist.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/json/ricardomontaner_123/playlist_sp.json" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/json/ricardomontaner_123/playlist_sp.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/json/ricardomontaner_123/playlist_yt.json" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/json/ricardomontaner_123/playlist_yt.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/json/romario1111/playlist_sp.json" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/json/romario1111/playlist_sp.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/json/romario1111/playlist_yt.json" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/json/romario1111/playlist_yt.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/README.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/css/admin-notifications.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/css/sb-blocks.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/css/sb-instagram-2-1.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/css/sb-instagram-2-1.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/css/sb-instagram-2-2.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/css/sb-instagram-2-2.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/css/sb-instagram-admin.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/css/sb-instagram.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/css/sb-instagram.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/css/sbi-styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/css/sbi-styles.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/gpl-2.0.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/img/about/api-error.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/img/about/icon-full.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/img/about/icon-none.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/img/about/icon-partial.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/img/about/plugin-fb.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/img/about/plugin-if.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/img/about/plugin-mi.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/img/about/plugin-om.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/img/about/plugin-rp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/img/about/plugin-seo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/img/about/plugin-smtp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/img/about/plugin-tw.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/img/about/plugin-wpforms.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/img/about/plugin-yt.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/img/about/steps.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/img/about/team.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/img/balloon-120.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/img/carousel.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/img/grid.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/img/highlight.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/img/insta-logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/img/instagram-pro-promo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/img/loader.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/img/masonry.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/img/placeholder.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/img/sbi-icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/img/sbi-oembed.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/img/small-logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/img/sw-screenshot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/img/thumb-placeholder.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/inc/admin/PluginSilentUpgrader.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/inc/admin/PluginSilentUpgraderSkin.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/inc/admin/actions.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/inc/admin/addon-functions.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/inc/admin/blocks/class-sbi-blocks.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/inc/admin/class-install-skin.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/inc/admin/class-sbi-about.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/inc/admin/class-sbi-account-connector.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/inc/admin/class-sbi-new-user.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/inc/admin/class-sbi-notifications.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/inc/admin/class-sbi-sitehealth.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/inc/admin/class-sbi-tracking.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/inc/admin/main.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/inc/admin/templates/locator-summary.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/inc/class-sb-instagram-api-connect.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/inc/class-sb-instagram-connected-account.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/inc/class-sb-instagram-cron-updater.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/inc/class-sb-instagram-data-encryption.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/inc/class-sb-instagram-data-manager.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/inc/class-sb-instagram-display-elements.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/inc/class-sb-instagram-education.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/inc/class-sb-instagram-feed-locator.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/inc/class-sb-instagram-feed.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/inc/class-sb-instagram-gdpr-integrations.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/inc/class-sb-instagram-oembed.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/inc/class-sb-instagram-parse.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/inc/class-sb-instagram-post-set.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/inc/class-sb-instagram-post.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/inc/class-sb-instagram-posts-manager.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/inc/class-sb-instagram-settings.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/inc/class-sb-instagram-single.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/inc/class-sb-instagram-token-refresher.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/inc/email.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/inc/if-functions.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/instagram-feed.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/js/admin-notifications.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/js/jquery.matchHeight-min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/js/sb-blocks.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/js/sb-instagram-2-2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/js/sb-instagram-2-2.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/js/sb-instagram-admin-2-2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/js/sb-instagram-admin.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/js/sb-instagram.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/js/sb-instagram.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/js/sbi-scripts.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/js/sbi-scripts.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/languages/instagram-feed-da_DK.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/languages/instagram-feed-de_DE.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/languages/instagram-feed-en.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/languages/instagram-feed-es_ES.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/languages/instagram-feed-fi_FI.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/languages/instagram-feed-fr_FR.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/languages/instagram-feed-it_IT.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/languages/instagram-feed-ja_JP.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/languages/instagram-feed-ko_KR.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/languages/instagram-feed-nl_NL.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/languages/instagram-feed-nn_NO.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/languages/instagram-feed-pt_PT.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/languages/instagram-feed-ru_RU.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/languages/instagram-feed-sv_SE.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/languages/instagram-feed.pot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/templates/feed.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/templates/footer.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/templates/header.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/templates/item.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/widget.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/instagram-feed/wpml-config.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/monkey_events/generate-interface/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/monkey_events/generate-interface/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/monkey_events/generate-json-local/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/monkey_events/generate-json-local/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/monkey_events/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/monkey_events/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/plugins/monkey_multisite/wp-plugin.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/monkey_multisite/wp-plugin.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -143,16 +22,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/json/ranking/ranking.json">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/plugins/monkey_events/spotify-api/index.php">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/plugins/monkey_events/youtube-api/index.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -204,26 +73,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/plugins/monkey_events/generate-interface/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
+            <state relative-caret-position="1836">
               <caret line="108" column="48" selection-start-line="108" selection-start-column="33" selection-end-line="108" selection-end-column="48" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#button#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/plugins/monkey_multisite/wp-plugin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="552">
-              <caret line="600" column="26" selection-start-line="600" selection-start-column="18" selection-end-line="600" selection-end-column="26" />
+            <state relative-caret-position="918">
+              <caret line="159" column="36" selection-start-line="159" selection-start-column="25" selection-end-line="159" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -231,10 +91,27 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/plugins/monkey_events/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="26" selection-start-line="26" selection-end-line="39" />
+            <state relative-caret-position="170">
+              <caret line="20" column="42" lean-forward="true" selection-start-line="20" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/wp-content/plugins/monkey_multisite/filter-table.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="722">
+              <caret line="177" column="5" lean-forward="true" selection-start-line="177" selection-start-column="5" selection-end-line="177" selection-end-column="5" />
+              <folding>
+                <element signature="n#style#0;n#iframe#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/plugins/hello.php">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -246,7 +123,6 @@
       <find>post</find>
       <find>field_custom</find>
       <find>$query</find>
-      <find>playlist_yt</find>
       <find>get_post_meta</find>
       <find>meta_query</find>
       <find>wp_rese</find>
@@ -255,10 +131,22 @@
       <find>var_</find>
       <find>POST_TYPE</find>
       <find>$posts_query</find>
-      <find>get_artists_all_columns()</find>
       <find>get_artists_all</find>
-      <find>get_artists_all_columns</find>
       <find>var_dump</find>
+      <find>ADMIN_FILTER_FIELD_VALUE</find>
+      <find>$artistAll</find>
+      <find>get_artists_all_columns()</find>
+      <find>get_artists_all_columns</find>
+      <find>get_artists_all_columns_init</find>
+      <find>playlist_yt</find>
+      <find>$listPostType</find>
+      <find>$listPostType</find>
+      <find>global</find>
+      <find>$artistAllInit</find>
+      <find>case</find>
+      <find>pagina_artista_id</find>
+      <find>add_artist_column</find>
+      <find>wee</find>
     </findStrings>
     <dirStrings>
       <dir>C:\laragon\www\artistas\wp-content\plugins\monkey_events</dir>
@@ -275,10 +163,11 @@
         <option value="$PROJECT_DIR$/wp-content/plugins/monkey_events/generate-interface/index.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/monkey_events/generate-json-local/artist.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/monkey_multisite/wp-plugin.php" />
+        <option value="$PROJECT_DIR$/wp-content/plugins/monkey_multisite/filter-table.php" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="1358" />
     <option name="y" value="-543" />
     <option name="width" value="1936" />
@@ -290,7 +179,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -327,6 +215,13 @@
               <item name="artistas" type="462c0819:PsiDirectoryNode" />
               <item name="wp-content" type="462c0819:PsiDirectoryNode" />
               <item name="plugins" type="462c0819:PsiDirectoryNode" />
+              <item name="monkey_endpoint" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="artistas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="artistas" type="462c0819:PsiDirectoryNode" />
+              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
+              <item name="plugins" type="462c0819:PsiDirectoryNode" />
               <item name="monkey_events" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -340,6 +235,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -385,17 +281,18 @@
       <workItem from="1644359626122" duration="42000" />
       <workItem from="1644359700347" duration="5286000" />
       <workItem from="1644521470362" duration="14615000" />
+      <workItem from="1644594162537" duration="15978000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34603000" />
+    <option name="totallyTimeSpent" value="50581000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-543" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14392324" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14552239" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -482,6 +379,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/monkey_events/generate-json-local/artist.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="59" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/plugins/monkey_events/generate-json-local/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1955">
@@ -492,40 +396,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/monkey_events/generate-json-local/artist.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/monkey_events/generate-interface/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="59" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="59" />
+        <state relative-caret-position="1836">
+          <caret line="108" column="48" selection-start-line="108" selection-start-column="33" selection-end-line="108" selection-end-column="48" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/plugins/monkey_events/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="26" selection-start-line="26" selection-end-line="39" />
+        <state relative-caret-position="170">
+          <caret line="20" column="42" lean-forward="true" selection-start-line="20" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/monkey_events/generate-interface/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="108" column="48" selection-start-line="108" selection-start-column="33" selection-end-line="108" selection-end-column="48" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/hello.php">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/plugins/monkey_multisite/wp-plugin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="600" column="26" selection-start-line="600" selection-start-column="18" selection-end-line="600" selection-end-column="26" />
+        <state relative-caret-position="918">
+          <caret line="159" column="36" selection-start-line="159" selection-start-column="25" selection-end-line="159" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/monkey_multisite/filter-table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="722">
+          <caret line="177" column="5" lean-forward="true" selection-start-line="177" selection-start-column="5" selection-end-line="177" selection-end-column="5" />
+          <folding>
+            <element signature="n#style#0;n#iframe#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
