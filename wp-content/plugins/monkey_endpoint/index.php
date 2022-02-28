@@ -19,6 +19,20 @@ const STATUS_RESPONSE = [
 
 add_action( 'rest_api_init', function () {
 
+    register_rest_route( 'v1', '/ranking',
+        array(
+            'methods' => 'GET',
+            'callback' => 'get_ranking'
+        )
+    );
+
+    register_rest_route( 'v1', '/trend',
+        array(
+            'methods' => 'GET',
+            'callback' => 'get_trend'
+        )
+    );
+
     register_rest_route( 'v1', '/artist/week',
         array(
             'methods' => 'GET',
@@ -76,6 +90,30 @@ add_action( 'rest_api_init', function () {
     );
 
 });
+
+function get_ranking($data){
+    $filename =   WP_CONTENT_DIR . '/json/ranking/ranking.json';
+    $contentRanking = [];
+
+    if (file_exists($filename)) {
+        $contentRanking = file_get_contents($filename);
+        $contentRanking = json_decode($contentRanking);
+    }
+
+    return $contentRanking;
+}
+
+function get_trend($data){
+    $filename =   WP_CONTENT_DIR . '/json/in_trend/in_trend.json';
+    $contentTrend = [];
+
+    if (file_exists($filename)) {
+        $contentTrend = file_get_contents($filename);
+        $contentTrend = json_decode($contentTrend);
+    }
+
+    return $contentTrend;
+}
 
 function insert_user($data){
     $my_post = array(

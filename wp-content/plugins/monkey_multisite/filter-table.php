@@ -179,6 +179,60 @@ function content_column_page_artist_week($name)
 }
 
 
+
+//PECHE
+
+add_filter('manage_edit-contact_user_columns', 'add_contact_user_column');
+
+function add_contact_user_column($columns) {
+    $custom_col_order = array(
+        'cb' => $columns['cb'],
+        'title' => $columns['title'],
+        'email' => __( 'Email', 'textdomain' ),
+        'telephone' => __( 'Teléfono', 'textdomain' ),
+        'pagina_artista_id' => __( 'Código Artista', 'textdomain' ),
+        'date' => $columns['date']
+    );
+    //$columns['pagina_artista_id'] = 'Artista';
+    return $custom_col_order;
+}
+
+add_action('manage_contact_user_posts_custom_column',  'content_column_page_contact_user');
+
+//manage_page_artist_posts_custom_column
+function content_column_page_contact_user($name)
+{
+    global $post;
+
+    global $artistAllInit;
+
+    $posts_query = $artistAllInit;
+
+    $listArtists = array_map(function ($item) {
+        $arr['id'] = $item->ID;
+        $arr['name'] = $item->ID . ' | ' . $item->post_title;
+        return $arr;
+    }, $posts_query);
+
+
+    switch ($name) {
+        case 'pagina_artista_id':
+            $artistId = get_post_meta($post->ID, 'artist_id')[0];
+            $artistSearch = array_search($artistId, array_column($listArtists, 'id')) ? array_search($artistId, array_column($listArtists, 'id')) : 'delete-artist';
+            $content = $listArtists[$artistSearch]['name'];
+            echo $content;
+            break;
+        case 'telephone':
+            echo get_post_meta($post->ID, 'telephone')[0];;
+            break;
+       case 'email':
+            echo get_post_meta($post->ID, 'email')[0];;
+            break;
+
+    }
+}
+
+
 add_action('manage_in_trend_posts_custom_column',  'content_column_page_in_trend');
 add_action('manage_ranking_posts_custom_column',  'content_column_page_in_trend');
 add_action('manage_page_artist_item_posts_custom_column',  'content_column_page_in_trend');
