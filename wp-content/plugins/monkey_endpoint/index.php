@@ -17,6 +17,44 @@ const STATUS_RESPONSE = [
     'error' => 'ERROR',
 ];
 
+
+function initCors( $value ) {
+    //header( 'Access-Control-Allow-Origin: *' );
+    $origin = get_http_origin();
+    $allowed_origins = array();
+
+    foreach($GLOBALS['cgv'] as $index => $item){
+        if ( strpos($index, 'origin_url') !== false ){
+            if(substr($item, -1) === '/'){
+                $item = substr($item, 0, -1);
+            }
+            array_push($allowed_origins, $item);
+        }
+    }
+
+    /*$allowed_origins = [
+        'http://multisite_artists.test:8084',
+        'site2.example.com',
+        'localhost:3000'
+    ];*/
+
+    if ( $origin && in_array( $origin, $allowed_origins ) ) {
+        header( 'Access-Control-Allow-Origin: ' . esc_url_raw( $origin ) );
+        header( 'Access-Control-Allow-Methods: GET, POST' );
+        header( 'Access-Control-Allow-Credentials: true' );
+    }
+
+    return $value;
+}
+
+add_action( 'rest_api_init', function() {
+
+    remove_filter( 'rest_pre_serve_request', 'rest_send_cors_headers' );
+
+    add_filter( 'rest_pre_serve_request', 'initCors');
+});
+
+
 add_action( 'rest_api_init', function () {
 
     register_rest_route( 'v1', '/ranking',
@@ -360,6 +398,7 @@ function get_page_artists_all($data){
     $args = array (
         'post_type'      => 'page_artist',
         'posts_per_page' => -1,
+        'post_status'   => 'publish',
         'orderby'   => array(
             'start_date' => 'ASC',
             'start_time' => 'ASC'

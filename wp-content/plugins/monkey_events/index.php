@@ -28,8 +28,16 @@ function get_artists_all(){
     $args = array (
         'post_type'      => 'page_artist',
         'posts_per_page' => -1,
+        'post_status'   => 'publish',
         'orderby'   => array(
             'date' =>'DESC',
+        ),
+        'meta_query'	=> array(
+            array(
+                'key'	 	=> 'aparece_footer',
+                'value'	  	=> 'SI',
+                'compare' 	=> '=',
+            )
         ),
     );
 

@@ -186,7 +186,7 @@ add_filter('manage_edit-contact_user_columns', 'add_contact_user_column');
 
 function add_contact_user_column($columns) {
     $custom_col_order = array(
-        'cb' => $columns['cb'],
+        //'cb' => $columns['cb'],
         'title' => $columns['title'],
         'email' => __( 'Email', 'textdomain' ),
         'telephone' => __( 'Teléfono', 'textdomain' ),

@@ -8,7 +8,8 @@ function getToken(){
     curl_setopt($ch, CURLOPT_POSTFIELDS,"grant_type=client_credentials");
     curl_setopt($ch, CURLOPT_HTTPHEADER, array(
                                                 'Content-Type: application/x-www-form-urlencoded',
-                                                'Authorization: Basic  OGJmOGZhODUzYTM2NGZjYjlkOTk4Y2MyMjk1MGM5YzU6NzdiMGI3MzA3ZTE3NDMwMzk2ZDBmNDA3OTQxNmRkZjM='
+                                                //'Authorization: Basic  OGJmOGZhODUzYTM2NGZjYjlkOTk4Y2MyMjk1MGM5YzU6NzdiMGI3MzA3ZTE3NDMwMzk2ZDBmNDA3OTQxNmRkZjM='
+                                                'Authorization: Basic ZmQ5YTdjNTQyMjc2NDk1MmFmODc1YjQ5YTQ3ZDEyMGE6NzNmZDM1NWI4NzI1NDkzNDkxYWIxZTZhODRlZjJkZmQ='
                                                 )
                                             );
 

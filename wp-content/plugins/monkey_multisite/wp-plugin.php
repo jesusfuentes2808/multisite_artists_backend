@@ -382,7 +382,26 @@ add_action( 'current_screen', function() {
         add_action( 'admin_footer', 'hide_batch_update_buttons' );
     }
 
+    if ( 'edit' === $screen->base
+         && $custom_post_type === $screen->post_type ) {
+
+        add_action( 'admin_footer', 'hide_controls' );
+    }
+
 });
+
+function hide_controls() {
+    ?>
+    <script type="text/javascript">
+
+            setTimeout(() => {
+                jQuery(".row-actions").remove();
+            }, 200);
+
+    </script>
+    <?php
+}
+
 
 function hide_batch_update_buttons() {
 	?>
@@ -397,13 +416,29 @@ function hide_batch_update_buttons() {
             jQuery('#minor-publishing-actions').remove();
             jQuery('#major-publishing-actions').remove();
             jQuery(".editor-post-publish-button__button").remove();
+            jQuery(".is-tertiary").remove();
 
-            // Add the "Add New" button in the right-hand column
-            jQuery('.wrap .page-title-action').clone().appendTo('#side-sortables');
-        }, 2000);
 
-        console.log("DELETE DELETE");
+        }, 200);
+
 	})( jQuery );
+
+    jQuery( window ).load(function() {
+        const validButton = setTimeout(() => {
+            //jQuery(".is-tertiary.is-destructive").remove();
+            jQuery(".is-tertiary").remove();
+            jQuery(".select2-hidden-accessible").prop('disabled', true);
+            jQuery(".editor-post-publish-button").remove();
+        }, 1000);
+
+        var handle  = setInterval(() => {
+            if( jQuery(".is-tertiary.is-destructive").length > 0){
+                jQuery(".is-tertiary.is-destructive").remove();
+                clearInterval(handle);
+            }
+            console.log("INTENTOS");
+        }, 1);
+    });
 	</script>
 	<?php
 }

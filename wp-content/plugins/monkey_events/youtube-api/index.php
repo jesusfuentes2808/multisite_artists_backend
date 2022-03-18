@@ -11,8 +11,9 @@ function getYoutube($listId, $type='playlist'){
 
     $ch = curl_init();
     //https://api.spotify.com/v1/playlists/
-
-    curl_setopt($ch, CURLOPT_URL,"https://youtube.googleapis.com/youtube/v3/playlists?part=snippet%20&id=" . $listId . "&maxResults=10&key=AIzaSyA5hWJ8FJrTZr412seBlVgzCIoykzBm8yM");
+    //https://youtube.googleapis.com/youtube/v3/playlistItems?part=contentDetails%20&playlistId=PLanrn6bPgjsbWdA7MPfyLAZS1D-byCfVb&key=AIzaSyA5hWJ8FJrTZr412seBlVgzCIoykzBm8yM
+    //curl_setopt($ch, CURLOPT_URL,"https://youtube.googleapis.com/youtube/v3/playlists?part=snippet%20&id=" . $listId . "&maxResults=10&key=AIzaSyA5hWJ8FJrTZr412seBlVgzCIoykzBm8yM");
+    curl_setopt($ch, CURLOPT_URL,"https://youtube.googleapis.com/youtube/v3/playlists?part=snippet%20&id=" . $listId . "&maxResults=10&key=AIzaSyBb1Ay4v3-KeQajZtTIY8aqAyCaWDIIw-0");
     curl_setopt($ch, CURLOPT_HTTPHEADER, array(
                                                 'Content-Type: application/json'
                                                 )
