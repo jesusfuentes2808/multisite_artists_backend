@@ -74,6 +74,7 @@ function add_content_artist_column($columns) {
         'cb' => $columns['cb'],
         'title' => $columns['title'],
         'image' => __('Imagen', ''),
+        'url' => __( 'URL', 'textdomain' ),
         'code' => __( 'Código Artista', 'textdomain' ),
         'video_youtube_id' => __( 'Video Youtube', 'textdomain' ),
         'date' => $columns['date']
@@ -132,6 +133,10 @@ function content_column_page_artist($name) {
         case 'code':
             $code = get_post_meta($post->ID, 'codigo')[0];
             echo $code;
+            break;
+        case 'url':
+            $url = get_post_meta($post->ID, 'url')[0];
+            echo "<a href='$url' target='_blank' >$url</a>";
             break;
         case 'video_youtube_id':
             $youtube = get_post_meta($post->ID, 'video_youtube_id')[0];

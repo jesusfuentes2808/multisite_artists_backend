@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b45dca6c-e99b-4d93-92bc-000e19f2b68a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/instituciones-imagen/display/table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/instituciones-imagen/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/json/ricardomontaner_123/artist.json" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/json/ricardomontaner_123/artist.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/json/ricardomontaner_123/playlist_sp.json" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/json/ricardomontaner_123/playlist_sp.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/json/romario1111/artist.json" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/json/romario1111/artist.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/plugins/monkey_endpoint/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/monkey_endpoint/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/monkey_events/generate-json-local/artist.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/monkey_events/generate-json-local/artist.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/plugins/monkey_events/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/monkey_events/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/monkey_events/spotify-api/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/monkey_events/spotify-api/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/monkey_events/youtube-api/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/monkey_events/youtube-api/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/plugins/monkey_multisite/filter-table.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/monkey_multisite/filter-table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/plugins/monkey_multisite/wp-plugin.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/monkey_multisite/wp-plugin.php" afterDir="false" />
     </list>
@@ -25,52 +25,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/plugins/monkey_events/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-34">
-              <caret line="26" column="27" lean-forward="true" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
+            <state relative-caret-position="51">
+              <caret line="3" column="48" selection-start-line="3" selection-start-column="48" selection-end-line="3" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/wp-content/plugins/monkey_events/generate-json-local/artist.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="352">
+              <caret line="35" column="22" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/plugins/hello.php">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.htaccess">
+        <entry file="file://$PROJECT_DIR$/wp-content/plugins/monkey_events/generate-interface/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="11" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/plugins/monkey_excel/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="98" column="64" selection-start-line="98" selection-start-column="64" selection-end-line="98" selection-end-column="64" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/plugins/monkey_events/youtube-api/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="23" selection-start-line="23" selection-end-line="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/plugins/monkey_events/spotify-api/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-462">
-              <caret line="12" column="46" selection-start-line="10" selection-start-column="47" selection-end-line="12" selection-end-column="46" />
+            <state relative-caret-position="2771">
+              <caret line="163" column="1" selection-start-line="163" selection-start-column="1" selection-end-line="163" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -78,26 +55,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/plugins/monkey_endpoint/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="400" column="37" selection-start-line="400" selection-start-column="37" selection-end-line="400" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/plugins/monkey_events/generate-json-remote/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="29" column="44" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/plugins/monkey_events/generate-json-local/artist.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="13" column="23" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="28" />
+            <state relative-caret-position="816">
+              <caret line="58" selection-start-line="58" selection-end-line="58" />
             </state>
           </provider>
         </entry>
@@ -105,8 +64,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/plugins/monkey_events/generate-json-local/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="167" selection-start-line="167" selection-end-line="167" />
+            <state relative-caret-position="527">
+              <caret line="71" column="13" selection-start-line="71" selection-start-column="13" selection-end-line="71" selection-end-column="13" />
               <folding>
                 <element signature="e#438#2059#0#PHP" />
               </folding>
@@ -118,42 +77,42 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>global</find>
-      <find>case</find>
-      <find>add_artist_column</find>
-      <find>wee</find>
-      <find>get_json</find>
-      <find>ranking</find>
-      <find>get_ranking</find>
-      <find>pagina_a</find>
-      <find>$artistAllInit</find>
-      <find>wp_qu</find>
-      <find>register_post_contact_user_type</find>
-      <find>content_column_page_artist</find>
-      <find>pagina_artista_id</find>
-      <find>case 'pagina_artista_id'</find>
-      <find>$listArtists</find>
-      <find>manage_page_contact_user_posts_custom_column</find>
-      <find>content_column_page_artist_week</find>
-      <find>manage_page_</find>
-      <find>manage_page_artist_posts_custom_column</find>
-      <find>manage_page_con</find>
-      <find>meta</find>
-      <find>contac_</find>
-      <find>.is-tertiary.is-destructive</find>
-      <find>repla</find>
-      <find>replace</find>
       <find>WP_Query</find>
       <find>$args</find>
       <find>publi</find>
       <find>get_page_artists_all</find>
       <find>args</find>
+      <find>add_page_artist_week_column</find>
+      <find>add_artist_column</find>
+      <find>content_column_page_in_trend</find>
+      <find>page_artist</find>
+      <find>-page_artist</find>
+      <find>edit-page_a</find>
+      <find>manage_page_a</find>
+      <find>content_column_page_artist</find>
+      <find>cvg</find>
+      <find>$GLOB</find>
+      <find>get_artists_all</find>
+      <find>$posts_query</find>
+      <find>'/'</find>
+      <find>get_post_meta</find>
+      <find>taxo</find>
+      <find>register_post_page_artist_type</find>
+      <find>footer</find>
+      <find>foot</find>
+      <find>foo</find>
+      <find>Sincronizar li</find>
+      <find>sincronizar_listas</find>
+      <find>manage_options</find>
+      <find>form</find>
+      <find>custom_form_submit</find>
+      <find>our_custom_form_function</find>
     </findStrings>
     <dirStrings>
-      <dir>C:\laragon\www\artistas\wp-content\plugins</dir>
       <dir>C:\laragon\www\artistas\wp-content\plugins\monkey_endpoint</dir>
       <dir>C:\laragon\www\artistas\wp-content\plugins\monkey_multisite</dir>
       <dir>C:\laragon\www\artistas\wp-content\plugins\monkey_events</dir>
+      <dir>C:\laragon\www\artistas\wp-content\plugins</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -164,24 +123,28 @@
       <list>
         <option value="$PROJECT_DIR$/wp-content/plugins/monkey_events/generate-json-local/index.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/monkey_events/generate-interface/index.php" />
-        <option value="$PROJECT_DIR$/wp-content/plugins/monkey_events/generate-json-local/artist.php" />
         <option value="$PROJECT_DIR$/.htaccess" />
         <option value="$PROJECT_DIR$/wp-content/plugins/monkey_excel/index.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/monkey_endpoint/url.json" />
         <option value="$PROJECT_DIR$/wp-content/plugins/monkey_events/spotify-api/index.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/monkey_events/youtube-api/index.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/monkey_multisite/filter-table.php" />
+        <option value="$PROJECT_DIR$/wp-content/plugins/monkey_endpoint/index.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/monkey_multisite/wp-plugin.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/monkey_events/index.php" />
-        <option value="$PROJECT_DIR$/wp-content/plugins/monkey_endpoint/index.php" />
+        <option value="$PROJECT_DIR$/wp-content/plugins/monkey_events/generate-json-local/artist.php" />
+        <option value="$PROJECT_DIR$/wp-content/plugins/instituciones-imagen/query/institucion-pais.php" />
+        <option value="$PROJECT_DIR$/wp-content/plugins/instituciones-imagen/index.php" />
+        <option value="$PROJECT_DIR$/wp-content/plugins/instituciones-imagen/display/table.php" />
+        <option value="$PROJECT_DIR$/wp-content/plugins/instituciones-imagen/activation-plugin/activation.php" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="170" />
-    <option name="y" value="91" />
-    <option name="width" value="1026" />
-    <option name="height" value="546" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -197,62 +160,6 @@
               <item name="artistas" type="b2602c69:ProjectViewProjectNode" />
               <item name="artistas" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="artistas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="artistas" type="462c0819:PsiDirectoryNode" />
-              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="artistas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="artistas" type="462c0819:PsiDirectoryNode" />
-              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
-              <item name="plugins" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="artistas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="artistas" type="462c0819:PsiDirectoryNode" />
-              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
-              <item name="plugins" type="462c0819:PsiDirectoryNode" />
-              <item name="monkey_endpoint" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="artistas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="artistas" type="462c0819:PsiDirectoryNode" />
-              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
-              <item name="plugins" type="462c0819:PsiDirectoryNode" />
-              <item name="monkey_events" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="artistas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="artistas" type="462c0819:PsiDirectoryNode" />
-              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
-              <item name="plugins" type="462c0819:PsiDirectoryNode" />
-              <item name="monkey_events" type="462c0819:PsiDirectoryNode" />
-              <item name="generate-json-local" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="artistas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="artistas" type="462c0819:PsiDirectoryNode" />
-              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
-              <item name="plugins" type="462c0819:PsiDirectoryNode" />
-              <item name="monkey_events" type="462c0819:PsiDirectoryNode" />
-              <item name="generate-json-remote" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="artistas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="artistas" type="462c0819:PsiDirectoryNode" />
-              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
-              <item name="plugins" type="462c0819:PsiDirectoryNode" />
-              <item name="monkey_events" type="462c0819:PsiDirectoryNode" />
-              <item name="spotify-api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="artistas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="artistas" type="462c0819:PsiDirectoryNode" />
-              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
-              <item name="plugins" type="462c0819:PsiDirectoryNode" />
-              <item name="monkey_excel" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -262,7 +169,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../multisite_artists" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../optica" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -327,18 +234,27 @@
       <workItem from="1647292013178" duration="1562000" />
       <workItem from="1647379745618" duration="19000" />
       <workItem from="1647555475167" duration="7000" />
-      <workItem from="1647569460397" duration="3747000" />
+      <workItem from="1647569460397" duration="3770000" />
+      <workItem from="1647643656296" duration="1001000" />
+      <workItem from="1647909105892" duration="5748000" />
+      <workItem from="1648053155135" duration="598000" />
+      <workItem from="1648258304038" duration="37000" />
+      <workItem from="1649120982162" duration="3509000" />
+      <workItem from="1649607626406" duration="12874000" />
+      <workItem from="1649630668537" duration="1769000" />
+      <workItem from="1649699911986" duration="27000" />
+      <workItem from="1649720691101" duration="1231000" />
+      <workItem from="1651104166793" duration="931000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="106748000" />
+    <option name="totallyTimeSpent" value="134496000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22012103" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25340393" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -350,7 +266,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.2913257" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.28968903" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -401,28 +317,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/monkey_events/generate-interface/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2584">
-          <caret line="152" column="33" selection-start-line="152" selection-start-column="24" selection-end-line="152" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/plugins/monkey_endpoint/url.json" />
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/monkey_multisite/wp-plugin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7463">
-          <caret line="439" column="14" selection-start-line="439" selection-start-column="14" selection-end-line="439" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/monkey_multisite/filter-table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3196">
-          <caret line="188" column="10" selection-start-line="188" selection-start-column="10" selection-end-line="188" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/plugins/hello.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -433,62 +328,104 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/monkey_events/generate-json-remote/index.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/monkey_excel/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="44" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="44" />
+        <state relative-caret-position="1496">
+          <caret line="98" column="64" selection-start-line="98" selection-start-column="64" selection-end-line="98" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/monkey_multisite/filter-table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2329">
+          <caret line="137" column="54" selection-start-line="137" selection-start-column="18" selection-end-line="137" selection-end-column="54" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/plugins/monkey_events/youtube-api/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
+        <state relative-caret-position="391">
           <caret line="23" selection-start-line="23" selection-end-line="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/monkey_excel/index.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/monkey_events/spotify-api/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="98" column="64" selection-start-line="98" selection-start-column="64" selection-end-line="98" selection-end-column="64" />
+        <state relative-caret-position="204">
+          <caret line="12" column="46" selection-start-line="10" selection-start-column="47" selection-end-line="12" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/monkey_events/generate-json-remote/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/monkey_multisite/wp-plugin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5610">
+          <caret line="330" selection-start-line="330" selection-end-line="359" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/instituciones-imagen/query/institucion-pais.php" />
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/instituciones-imagen/display/table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="n#style#0;n#td#0;n#tr#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h1#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/instituciones-imagen/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="15" column="18" lean-forward="true" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/instituciones-imagen/activation-plugin/activation.php" />
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/monkey_events/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="48" selection-start-line="3" selection-start-column="48" selection-end-line="3" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/monkey_events/generate-interface/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2771">
+          <caret line="163" column="1" selection-start-line="163" selection-start-column="1" selection-end-line="163" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/monkey_endpoint/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="58" selection-start-line="58" selection-end-line="58" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/plugins/monkey_events/generate-json-local/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="167" selection-start-line="167" selection-end-line="167" />
+        <state relative-caret-position="527">
+          <caret line="71" column="13" selection-start-line="71" selection-start-column="13" selection-end-line="71" selection-end-column="13" />
           <folding>
             <element signature="e#438#2059#0#PHP" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/monkey_endpoint/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="400" column="37" selection-start-line="400" selection-start-column="37" selection-end-line="400" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/monkey_events/spotify-api/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-462">
-          <caret line="12" column="46" selection-start-line="10" selection-start-column="47" selection-end-line="12" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/plugins/monkey_events/generate-json-local/artist.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="13" column="23" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/monkey_events/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-34">
-          <caret line="26" column="27" lean-forward="true" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
+        <state relative-caret-position="352">
+          <caret line="35" column="22" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
         </state>
       </provider>
     </entry>

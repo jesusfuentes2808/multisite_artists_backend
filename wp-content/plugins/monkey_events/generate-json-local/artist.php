@@ -1,4 +1,16 @@
 <?php
+
+function wp_get_post_terms_new( $post_id = 0, $taxonomy = 'category', $args = array() ) {
+    $post_id = (int) $post_id;
+
+    $defaults = array( 'fields' => 'all' );
+    $args     = wp_parse_args( $args, $defaults );
+
+    $tags = wp_get_object_terms( $post_id, $taxonomy, $args );
+
+    return $tags;
+}
+
 function fn_sincronizar_artista_info($postId, $codeArtist){
     if (!is_dir(WP_CONTENT_DIR . '/json/')) {
         mkdir(WP_CONTENT_DIR . '/json/');
@@ -11,7 +23,9 @@ function fn_sincronizar_artista_info($postId, $codeArtist){
         mkdir($folder);
     }
 
-    $query = get_artists_all();
+    $postTerm = wp_get_post_terms_new($postId, 'category', array( 'fields' => 'names' ));
+
+    $query = get_artists_all($postTerm[0]);
     $posts_query = $query->posts;
 
     $array_site = array_map(function($item){

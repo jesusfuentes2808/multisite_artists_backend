@@ -328,19 +328,19 @@ add_action( 'init', 'register_post_contact_user_type' );
 
 
 
-/*
+
 function register_genre_taxonomy() {
 
     $labels = array(
-        'name' => __( 'Generos'),
-        'singular_name' => __( 'Genero', 'tutsplus' ),
-        'search_items' => __( 'Buscar Generos'),
-        'all_items' => __( 'Todos los Generos'),
-        'edit_item' => __( 'Editar Genero'),
-        'update_item' => __( 'Actualizar Generos'),
-        'add_new_item' => __( 'Agregar nuevo Genero'),
-        'new_item_name' => __( 'Nuevo nombre de Genero'),
-        'menu_name' => __( 'Generos'),
+        'name' => __( 'Género Musical'),
+        'singular_name' => __( 'Género Musical', 'tutsplus' ),
+        'search_items' => __( 'Buscar Género Musical'),
+        'all_items' => __( 'Todos los Géneros Musicales'),
+        'edit_item' => __( 'Editar Género Musical'),
+        'update_item' => __( 'Actualizar Género Musical'),
+        'add_new_item' => __( 'Agregar nuevo Género Musical'),
+        'new_item_name' => __( 'Nuevo nombre de Género Musical'),
+        'menu_name' => __( 'Géneros Musicales'),
     );
 
     $args = array(
@@ -348,17 +348,16 @@ function register_genre_taxonomy() {
         'hierarchical' => true,
         'sort' => true,
         'args' => array( 'orderby' => 'term_order' ),
-        'rewrite' => array( 'slug' => 'generos' ),
+        'rewrite' => array( 'slug' => 'category' ),
         'show_admin_column' => true,
         'show_in_rest' => true
-
     );
 
-    register_taxonomy( 'genre', array( 'song' ), $args);
+    register_taxonomy( 'category', array( 'page_artist' ), $args);
 
 }
 
-add_action( 'init', 'register_genre_taxonomy' );*/
+add_action( 'init', 'register_genre_taxonomy' );
 
 add_action( 'current_screen', function() {
 

@@ -18,10 +18,44 @@ const STATUS_RESPONSE = [
 ];
 
 
+function get_artists_all_cors(){
+    $args = array (
+        'post_type'      => 'page_artist',
+        'posts_per_page' => -1,
+        'post_status'   => 'publish',
+        'orderby'   => array(
+            'date' =>'DESC',
+        ),
+    );
+
+    $query = new WP_Query( $args );
+
+    return $query;
+}
+
 function initCors( $value ) {
     //header( 'Access-Control-Allow-Origin: *' );
     $origin = get_http_origin();
     $allowed_origins = array();
+
+    $query = get_artists_all_cors();
+    $posts_query = $query->posts;
+
+    if(!isset($GLOBALS['cgv'])){
+        $GLOBALS['cgv'] = array();
+    }
+
+    foreach($posts_query as $index => $item){
+
+        $url =  get_post_meta($item->ID, 'url')[0];
+        $url = trim($url);
+
+        $lastCharUrl = substr($url, -1);
+        $lastCharUrl = ($lastCharUrl === '/') ? '' : '/';
+        $url = $url.$lastCharUrl;
+
+        $GLOBALS['cgv']['origin_url_personalizated_' . $index] = $url;
+    }
 
     foreach($GLOBALS['cgv'] as $index => $item){
         if ( strpos($index, 'origin_url') !== false ){
@@ -449,8 +483,6 @@ function get_youtube_spotify_playlist($data){
 
         return $response;
     }
-
-    
 
     $args = array (
         'post_type'      => 'page_artist',

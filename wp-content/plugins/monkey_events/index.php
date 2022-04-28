@@ -24,7 +24,7 @@ include('generate-json-remote/index.php');
 const ARRPOSTTYPE = ['playlist_yt', 'playlist_sp'];
 const ARRPOSTTYPEGLOBAL = ['ranking', 'in_trend', 'page_artist_item'];
 
-function get_artists_all(){
+function get_artists_all($taxonomy = ''){
     $args = array (
         'post_type'      => 'page_artist',
         'posts_per_page' => -1,
@@ -40,6 +40,17 @@ function get_artists_all(){
             )
         ),
     );
+
+    if($taxonomy != ''){
+        $args['tax_query'] = array(
+            array (
+                'taxonomy' => 'category',
+                'field' => 'slug',
+                'terms' => $taxonomy,
+            )
+        );
+    }
+
 
     $query = new WP_Query( $args );
 
