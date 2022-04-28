@@ -1,5 +1,69 @@
 <?php
 
+function makeDirectoryNews($category){
+    if (!is_dir(WP_CONTENT_DIR . '/json/')) {
+        mkdir(WP_CONTENT_DIR . '/json/');
+    }
+
+    if (!is_dir(WP_CONTENT_DIR . '/json/news')) {
+        mkdir(WP_CONTENT_DIR . '/json/news');
+    }
+
+    $folder = WP_CONTENT_DIR . '/json/news/'.$category.'/';
+
+    $args = array(
+        'post_type' => 'news',
+        'posts_per_page' => 10,
+        'orderby' => array(
+            'date' => 'DESC',
+        ),
+        'post_status' => array('publish'),
+        'tax_query' => array(
+            array (
+                'taxonomy' => 'category',
+                'field' => 'slug',
+                'terms' => $category,
+            )
+        )
+    );
+
+    if (!is_dir($folder)) {
+        mkdir($folder);
+    }
+
+    $query = new WP_Query($args);
+    $posts_query = $query->posts;
+
+    $posts = array();
+    $response = null;
+
+    foreach ($posts_query as $post) {
+        $dataParent = array();
+        //array_push($posts, $post);
+        $dataParent['post'] = get_post($post->ID);
+        $dataParent['post_thumbnail'] = wp_get_attachment_url(get_post_thumbnail_id($post->ID));
+        array_push($posts, $dataParent);
+    }
+
+    $response['items'] = $posts;
+    $data = json_encode($response);
+
+    $file_name = $category . '.json';
+
+    $response = array();
+
+    if (file_put_contents($folder . $file_name, $data) !== false) {
+        $response['status'] = "ok";
+        $response['data']['message'] = "Creado correctamente";
+
+    } else {
+        $response['status'] = "error";
+        $response['data']['message'] = "No se lograron cargar los archivos correctamente";
+    }
+
+    return json_encode($response);
+}
+
 function makeDirectory($postType, $keyArtist = null)
 {
     if (!is_dir(WP_CONTENT_DIR . '/json/')) {

@@ -307,6 +307,45 @@ function register_post_playlist_sp_type() {
 }
 
 
+
+function register_post_news_type() {
+
+    $labels = array(
+        'name' => __( 'Noticias '),
+        'singular_name' => __( 'Noticias '),
+        'add_new' => __( 'Nueva Noticias '),
+        'add_new_item' => __( 'Agregar Noticias '),
+        'edit_item' => __( 'Actualizar Noticias '),
+        'new_item' => __( 'Nueva Noticias '),
+        'view_item' => __( 'Ver Noticias '),
+        'search_items' => __( 'Buscar Noticias '),
+        'not_found' =>  __( 'Noticias no encontrados'),
+        'not_found_in_trash' => __( 'Noticias no encontrados en Basurero'),
+    );
+
+    $args = array(
+        'labels' => $labels,
+        'has_archive' => true,
+        'public' => true,
+        'hierarchical' => false,
+        'supports' => array(
+            'title',
+            'editor',
+            'excerpt',
+            'custom-fields',
+            'thumbnail',
+            'page-attributes'
+        ),
+        'rewrite'   => array( 'slug' => 'news' ),
+        'show_in_rest' => true,
+        'menu_icon' => 'dashicons-admin-site',
+    );
+
+    register_post_type( 'news', $args );
+}
+
+
+add_action( 'init', 'register_post_news_type' );
 add_action( 'init', 'register_post_page_artist_type' );
 add_action( 'init', 'register_post_playlist_yt_type' );
 add_action( 'init', 'register_post_playlist_sp_type' );
@@ -353,7 +392,7 @@ function register_genre_taxonomy() {
         'show_in_rest' => true
     );
 
-    register_taxonomy( 'category', array( 'page_artist' ), $args);
+    register_taxonomy( 'category', array( 'page_artist', 'news' ), $args);
 
 }
 

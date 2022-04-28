@@ -65,12 +65,36 @@ function funcion_sincronizar() {
     }
     echo '<hr/>';
     echo '<span style="font-weight: bold">Si seleccionas las listas globales y no has seleccionado ninguna página, se sincronizarán la lista global seleccionadas (Ranking, Tendencias, Item Página Artista) de todas las páginas.</span>';
-    echo '<p><input value="ranking" name="global[]"  type="checkbox" />Listas Globales - Ranking</p>';
-    echo '<p><input value="in_trend" name="global[]"  type="checkbox" />Listas Globales - Tendencia</p>';
-    echo '<p><input value="page_artist_item" name="global[]"  type="checkbox" />Listas Globales - Item Pagina artista</p>';
-    
+    echo '<p><input value="ranking" name="global[]" class="global"  type="checkbox" />Listas Globales - Ranking</p>';
+    echo '<p><input value="in_trend" name="global[]" class="global"  type="checkbox" />Listas Globales - Tendencia</p>';
+    echo '<p><input value="page_artist_item" name="global[]" class="global" type="checkbox" />Listas Globales - Item Pagina artista</p>';
+
+    echo '<hr/>';
+    echo '<span style="font-weight: bold">Sincronizar Noticias</span>';
+    echo '<p><input value="news" name="news"  id="news" type="checkbox" />Listas Globales - Noticias</p>';
+
     echo '<button style="font-size: 25px;font-weight: inherit;width: 200px;cursor: pointer;" type="submit">Sincronizar</button>';
-    
+
+    echo '<script>
+            jQuery("#news").on("click", function(){
+                if( jQuery("#news").is(":checked") ){
+                    jQuery( ".global" ).prop( "checked", false );
+                    jQuery(".global").attr("disabled", true);
+                } else {
+                    jQuery(".global").removeAttr("disabled");    
+                }
+            });
+            
+            jQuery(".global").on("click", function(){
+                if( jQuery(".global").is(":checked") ){
+                    jQuery( "#news" ).prop( "checked", false );
+                    jQuery("#news").attr("disabled", true);
+                } else {
+                    jQuery("#news").removeAttr("disabled");    
+                }
+            });
+        </script>';
+
     if(isset($_SESSION['message'])){
         echo '<hr/>';
         
@@ -99,6 +123,26 @@ function our_custom_form_function(){
         $arrayMessage = array();
         
         //var_dump($_POST['global']);
+
+        if(isset($_POST['news'])){
+            if(isset($_POST['page_artist'])){
+                foreach($_POST['page_artist'] as $postId){
+                    $url = get_field('url', $postId);
+                    $category = get_the_terms( $postId, 'category' );
+                    $nameCategory = '';
+                    if(!empty($category)){
+                        $nameCategory = $category[0]->name;
+                    }
+
+                    if($nameCategory !== '') {
+                        fn_sincronizar_news($nameCategory);
+                    }
+
+
+                    array_push($arrayMessage, fn_enviar_files_remote($url, 'news/'.$nameCategory, $nameCategory));
+                }
+            }
+        }
 
         if(isset($_POST['global'])){
             foreach($_POST['global'] as $postType){
@@ -165,6 +209,10 @@ function our_custom_form_function(){
 
 function fn_sincronizar_global($postType) {
     return makeDirectory($postType);
+}
+
+function fn_sincronizar_news($category) {
+    return makeDirectoryNews($category);
 }
 
 
